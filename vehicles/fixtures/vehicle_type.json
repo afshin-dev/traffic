@@ -1,0 +1,16 @@
+[
+    {
+        "pk": "1",
+        "model": "vehicles.vehicletype",
+        "fields": {
+            "name": "light"
+        }
+    },
+    {
+        "pk": "2",
+        "model": "vehicles.vehicletype",
+        "fields": {
+            "name": "heavy"
+        }
+    }
+]

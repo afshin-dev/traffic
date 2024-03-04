@@ -1,0 +1,93 @@
+[
+  {
+    "pk": "1",
+    "model": "vehicles.vehicle",
+    "fields": {
+      "name": "a",
+      "vtype": 1,
+      "max_load": 0,
+      "color": "BLACK",
+      "last_long": 0.0,
+      "last_lat": 0.0,
+      "length": 3.1
+    }
+  },
+  {
+    "pk": "2",
+    "model": "vehicles.vehicle",
+    "fields": {
+      "name": "b",
+      "vtype": 2,
+      "max_load": 400,
+      "color": "BLACK",
+      "last_long": 18.0,
+      "last_lat": 29.0,
+      "length": 5.5
+    }
+  },
+  {
+    "pk": "7",
+    "model": "vehicles.vehicle",
+    "fields": {
+      "name": "aa",
+      "vtype": 1,
+      "max_load": 0,
+      "color": "BLACK",
+      "last_long": 0.0,
+      "last_lat": 0.0,
+      "length": 3.1
+    }
+  },
+  {
+    "pk": "5",
+    "model": "vehicles.vehicle",
+    "fields": {
+      "name": "aaa",
+      "vtype": 1,
+      "max_load": 0,
+      "color": "BLUE",
+      "last_long": 0.0,
+      "last_lat": 0.0,
+      "length": 3.1
+    }
+  },
+  {
+    "pk": "6",
+    "model": "vehicles.vehicle",
+    "fields": {
+      "name": "bb",
+      "vtype": 2,
+      "max_load": 334,
+      "color": "RED",
+      "last_long": 0.0,
+      "last_lat": 0.0,
+      "length": 5.2
+    }
+  },
+  {
+    "pk": "3",
+    "model": "vehicles.vehicle",
+    "fields": {
+      "name": "aaaa",
+      "vtype": 1,
+      "max_load": 0,
+      "color": "WHITE",
+      "last_long": 0.0,
+      "last_lat": 0.0,
+      "length":  3.1 
+    }
+  },
+  {
+    "pk": "4",
+    "model": "vehicles.vehicle",
+    "fields": {
+      "name": "bbb",
+      "vtype": 2,
+      "max_load": 125,
+      "color": "RED",
+      "last_long": 0.0,
+      "last_lat": 0.0,
+      "length":  6.3
+    }
+  }
+]

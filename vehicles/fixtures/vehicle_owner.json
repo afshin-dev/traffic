@@ -1,0 +1,58 @@
+[
+  {
+    "pk": "1",
+    "model": "vehicles.vehicleowner",
+    "fields": {
+      "user": 1,
+      "vehicle": 1
+    }
+  },
+  {
+    "pk": "2",
+    "model": "vehicles.vehicleowner",
+    "fields": {
+      "user": 1,
+      "vehicle": 2
+    }
+  },
+  {
+    "pk": "3",
+    "model": "vehicles.vehicleowner",
+    "fields": {
+      "user": 2,
+      "vehicle": 7
+    }
+  },
+  {
+    "pk": "4",
+    "model": "vehicles.vehicleowner",
+    "fields": {
+      "user": 3,
+      "vehicle": 5
+    }
+  },
+  {
+    "pk": "5",
+    "model": "vehicles.vehicleowner",
+    "fields": {
+      "user": 3,
+      "vehicle": 6
+    }
+  },
+  {
+    "pk": "6",
+    "model": "vehicles.vehicleowner",
+    "fields": {
+      "user": 4,
+      "vehicle": 3
+    }
+  },
+  {
+    "pk": "7",
+    "model": "vehicles.vehicleowner",
+    "fields": {
+      "user": 4,
+      "vehicle": 4
+    }
+  }
+]
