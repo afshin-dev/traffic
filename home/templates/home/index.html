@@ -1,0 +1,76 @@
+{% extends "home/layout.html" %}
+
+
+{% block content %}
+        <div class="container" dir="rtl">
+            <div class="row">
+
+
+
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">road cross</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary"> عبور وسایل  نقلیه از خیابان ها</h6>
+                      <p class="card-text">مشاهده ی وسایل نقلیه ی سنگینی که از خیابان های با عرض کمتر از بیست متر عبور کردند</p>
+                      <a href="http://127.0.0.1:8000/roads_cross/" class="card-link">لیست وسایل نقلیه سنگین</a>
+                      <hr />
+                      <a href="http://127.0.0.1:8000/roads_cross/2" class="card-link">گزارش وسلیه ی نقلیه با شناسه ی ۲</a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">stations</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">مدیریت ایستگاه ها </h6>
+                      <p class="card-text">لیست ایستگاه ها - ثبت عوارض برای وسایل نقلیه - پرداخت یک عوارض مشخص</p>
+                      <a href="http://127.0.0.1:8000/stations/" class="card-link">API Root</ a>
+                      <hr />
+                      <a href="http://127.0.0.1:8000/stations/all" class="card-link">عوارضی ها </a>
+                      <a href="http://127.0.0.1:8000/stations/cross" class="card-link"> ثبت عوارض </a>
+                      <a href="http://127.0.0.1:8000/stations/toll_payment" class="card-link"> پرداخت عوارض </a>
+                    </div>
+                </div>
+              </div>
+
+
+
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">vehicles</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">مدیریت مالک ها - خودروها</h6>
+                      <p class="card-text">لیست تمام خودروها و اختضاص یک خودرو به یک کاربر</p>
+                      <a href="http://127.0.0.1:8000/vehicles/types/" class="card-link">انواع وسایل نقلیه</a>
+                      <hr />
+                      <a href="http://127.0.0.1:8000/vehicles/all/" class="card-link">  خودروها</a>
+                      <a href="http://127.0.0.1:8000/vehicles/owners/" class="card-link">  مالک ها</a>
+                      <a href="http://127.0.0.1:8000/vehicles/all/1/get_tolls/" class="card-link">لیست عوارض خودرو با شناسه ۱  </a>
+                      <a href="http://127.0.0.1:8000/vehicles/owners/?min_user_age=70" class="card-link">مالک های خودرو بالای 70 سال  </a>
+                      
+                    </div>
+                </div>
+              </div>
+              
+
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">others reports</h5>
+                      <a href="http://127.0.0.1:8000/tolls/vehicle_near_station/4/" class="card-link">لیست وسایل نقلیه سبک در 600 متری عوارضی 1</a>
+                      <hr />
+
+                      <a href="http://127.0.0.1:8000/tolls/vehicle_near_station/2/?distance=50" class="card-link">لیست وسایل نقلیه سبک در 50 متری عوارضی 2</a>
+                      <hr />
+                      <a href="http://127.0.0.1:8000/tolls/user/1" class="card-link">  (۱)همه ی عوارض متعلق به یک کاربر </a>
+                      
+                    </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+{% endblock content %}
