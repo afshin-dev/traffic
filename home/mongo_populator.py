@@ -9,6 +9,8 @@ from pathlib import Path
 from django.conf import settings
 from utills import mongo 
 from traffic.settings import BASE_DIR
+import pymongo 
+
 
 
 
@@ -27,12 +29,18 @@ def populate_data(p: str, col_name: str) -> InsertManyResult:
       `col_name` collection name 
     """
     file_path = Path(p) 
+    client = mongo.get_client(settings.MONGO_HOST, settings.MONGO_PORT)
+    traffic: Database = client.traffic
+    
+     
     with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
-        client = mongo.get_client(settings.MONGO_HOST, settings.MONGO_PORT)
-        traffic: Database = client.traffic 
+        
         collection: Collection = traffic[col_name] 
         result: InsertManyResult = collection.insert_many(data)
+
+    # traffic['roads'].create_index(["geom", pymongo.GEOSPHERE])
+    # traffic['all_nodes'].create_index(["location", pymongo.GEOSPHERE]) 
 
     return result
 
