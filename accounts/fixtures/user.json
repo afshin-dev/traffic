@@ -1,0 +1,42 @@
+[
+  {
+    "pk": "1",
+    "model": "accounts.user",
+    "fields": {
+      "name": "Ali",
+      "national_code": 1254448974,
+      "age": 34,
+      "total_toll_paid": 200
+    }
+  },
+  {
+    "pk": "2",
+    "model": "accounts.user",
+    "fields": {
+      "name": "Naser",
+      "national_code": 8593332568,
+      "age": 79,
+      "total_toll_paid": 1500
+    }
+  },
+  {
+    "pk": "3",
+    "model": "accounts.user",
+    "fields": {
+      "name": "Hamid",
+      "national_code": 8792586347,
+      "age": 54,
+      "total_toll_paid": 4000
+    }
+  },
+  {
+    "pk": "4",
+    "model": "accounts.user",
+    "fields": {
+      "name": "Mohammad",
+      "national_code": 8569875425,
+      "age": 72,
+      "total_toll_paid": 2000
+    }
+  }
+]
