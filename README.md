@@ -6,7 +6,9 @@
 ## load fixtures (load data to database)
     - py manage.py loaddata user.json vehicle_type.json vehicles.json vehicle_owner.json       
 ## ensure mongodb run at localhost:27017
-    - if mongo is in another port and host change settings.MONGO_HOST and settings.MONGO_PORT 
+### if mongo is in another port and host change settings.MONGO_HOST and settings.MONGO_PORT 
+
+
 ## run development server 
     - py manage.py runserver     
 
@@ -19,7 +21,7 @@
         
 ## load fixture toll_stations (django signal must be trigger)   
 ### after running this fixture in mongodb `traffic` database must be a collection 
-    named toll_stations with some initial documnets
+## named toll_stations with some initial documnets
     - py manage.py loaddata toll_stations.json
 
 
@@ -27,6 +29,6 @@
     - py manage.py runserver     
 
 ## READY TO test application 
-(some endpoint require admin permission) and request must be send 
-with admin token in this format
+### (some endpoint require admin permission) and request must be send 
+### with admin token in this format
     Authorization: Token <>     
