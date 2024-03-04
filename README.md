@@ -29,4 +29,4 @@
 ## READY TO test application 
 (some endpoint require admin permission) and request must be send 
 with admin token in this format
-    Authorization: Token <key>     
+    Authorization: Token <>     
