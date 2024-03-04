@@ -10,5 +10,5 @@ def get_geojson_point(value: str):
     long_lat = point[1].split(',')
     return {
         'type': point[0].strip() ,
-        'coordinate' : [float(long_lat[0]), float(long_lat[1])]
+        'coordinates' : [float(long_lat[0]), float(long_lat[1])]
     }

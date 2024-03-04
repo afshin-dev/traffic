@@ -15,7 +15,7 @@ from traffic.settings import BASE_DIR
 
 def populate_db(request: HttpRequest) -> HttpResponse:
     folder = BASE_DIR / "seed" 
-    files = ( ( "roads.json" , "roads")  , ( "all_nodes.json", "all_nodes" ) , ("toll_stations.json" , "toll_stations") )
+    files = ( ( "roads.json" , "roads")  , ( "all_nodes.json", "all_nodes" ) )#, ("toll_stations.json" , "toll_stations") )
     
     for file in files:
         populate_data(folder / file[0], file[1])

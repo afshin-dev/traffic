@@ -51,7 +51,7 @@ def vehicle_near_toll_station(request: Request, toll_station_id: int) -> Respons
     # get all toll stations
     toll_station = toll_stations.find_one({'id' : toll_station_id})
 
-    
+    # print(toll_station)
     if toll_station:
         vehicle_near_toll_station_list = all_nodes.find({'car' : {'$in': vehicle_ids},
                                                          'location' : {"$nearSphere": {"$maxDistance": max_distance, "$geometry" : 
